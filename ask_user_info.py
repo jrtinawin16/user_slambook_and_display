@@ -20,4 +20,11 @@ while True:
 
     # collect all datas
     full_name = input("Full name: ")
+    if full_name == " ":
+        print ("Invalid, please re-enter your name")
+            
+    # store datas in dictionary
     person_info = {}
+
+    person_info["Nickname"] = input("Nickname: ")
+    person_info["Age"] = int(input("Age: "))
