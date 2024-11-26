@@ -15,3 +15,9 @@
     # one word to describe yourself
     # motto in life
 # ask user again if they want to enter another set of data
+while True:
+    print("\n---Hello! Please enter your information---")
+
+    # collect all datas
+    full_name = input("Full name: ")
+    person_info = {}
