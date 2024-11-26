@@ -38,4 +38,13 @@ while True:
     person_info["Ambition"] = input("What would you like to be in the future?: ")
     person_info["Favorite Food"] = input("Favorite food: ")
     person_info["Favorite Ice Cream Flavor"] = input("Favorite Ice cream flavor: ")
-    
+    person_info["Choice"] = input("Books or songs?: ")
+    if person_info["Choice"] != "Books":
+        print("Invalid, please try again.")
+    elif person_info["Choice"] != "Songs":
+        print("Invalid, please try again.")
+    person_info["Pineapple Preference"] = input("Do you like pineapples on pizza? (y/n): ")
+    if person_info["Pineapple Preference"] != "y" or person_info["Pineapple Preference"] != "n":
+        print("Invalid, please try again.")
+    person_info["Description"] = input("One word to describe yourself: ")
+    person_info["Motto"] = input("Motto in life: ")
