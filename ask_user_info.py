@@ -25,7 +25,7 @@ while True:
     # collect all datas
             full_name = input("Full name: ")
             if full_name == " ":
-                break
+                continue
             
         # store datas in dictionary
             person_info = {}
@@ -58,15 +58,19 @@ while True:
             person_info["Motto"] = input("Motto in life: ")
 
             print("\nInformation successfully saved!")
+            ask_again = input("Do you want to add another person? (y/n): ")
             
-            retry = input("Do you want to add another person? (y/n): ")
-            if retry != "y":    
-                continue
-            else:
-                print("Thank you!")
-
         except: 
-            print("Invalid input, please try again.")    
+            print("Invalid input, please try again.")
+    
+    if ask_again != "y":    
+        continue
+    elif ask_again == "n":
+        print("Thank you!")
+        break
+    else:
+        print("Invalid input, please try again.")
+    
 
     
         
