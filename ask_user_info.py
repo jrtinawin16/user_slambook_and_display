@@ -16,20 +16,21 @@
     # motto in life
 # ask user again if they want to enter another set of data
 
-with open("personal_data.txt", "w") as file_handle:
-# Loop 1 - ask user for next information
-    while True:
-        print("\n---Hello! Please enter your information---")
+user_info = {}
+# Loop 1- asks user for next input
+while True:
+    print("\n---Hello! Please enter your information---")
     # Loop 2 - retry if there is error
-        while True:
-            try:
-    # collect all datas
+    while True:
+        try:
+    # Loop 3-collect all datas
+            while True:    
                 full_name = input("Full name: ")
                 if full_name == " ":
                     continue
             
         # store datas in dictionary
-                person_info = {}
+                
 
                 person_info["Nickname"] = input("Nickname: ")
                 if person_info["Nickname"] == " ":
@@ -40,7 +41,7 @@ with open("personal_data.txt", "w") as file_handle:
                 person_info["Address"] = input("Address: ")
                 person_info["Birthday"] = input("Birthday: ")
                 person_info["Cellphone Number"] = (int(input("Cellphone Number: ")))
-                if len(str(person_info["Cellphone Number"])) != 11:
+                if (len(str(person_info["Cellphone Number"]))) != 11:
                     break
                 person_info["Favorite Color"] = input("Favorite Color: ")
                 person_info["Hobby"] = input("Hobby: ")
@@ -48,9 +49,9 @@ with open("personal_data.txt", "w") as file_handle:
                 person_info["Favorite Food"] = input("Favorite food: ")
                 person_info["Favorite Ice Cream Flavor"] = input("Favorite Ice cream flavor: ")
                 person_info["Choice"] = input("Books or songs?: ")
-                if person_info["Choice"] != "Books":
+                if person_info["Choice"] != "books":
                     break
-                elif person_info["Choice"] != "Songs":
+                elif person_info["Choice"] != "songs":
                     break
                 person_info["Pineapple Preference"] = input("Do you like pineapples on pizza? (y/n): ")
                 if person_info["Pineapple Preference"] != "y" or person_info["Pineapple Preference"] != "n":
@@ -59,15 +60,15 @@ with open("personal_data.txt", "w") as file_handle:
                 person_info["Motto"] = input("Motto in life: ")
 
                 print("\nInformation successfully saved!")
-                ask_again = input("Do you want to add another person? (y/n): ")
+                continue_input = input("Do you want to add another person? (y/n): ")
                 break
             
-            except: 
-                print("Invalid input, please try again.")
+        except: 
+            print("Invalid input, please try again.")
     
-        if ask_again == "y":    
+        if continue_input == "y":    
             continue
-        elif ask_again == "n":
+        elif continue_input == "n":
             print("Thank you!")
             break
         else:
