@@ -104,10 +104,25 @@ while True:
                 if len(user_ambition.split()) >= 1:
                     break
                 else:
-                    print("Please enter an ambition.")
+                    print("Ambition cannot be blank.")
+
+            while True: # Loop 12 - asks user for favorite food    
+                user_favorite_food = input("Favorite food: ")
+                if len(user_favorite_food.split()) >= 1:
+                    break
+                else:
+                    print("Favorite food cannot be blank.")
+
+            while True: # Loop 13 - asks user for favorite ice cream flavor        
+                user_ice_cream = input("Favorite ice cream flavor: ")
+                common_flavors = ["vanilla", "chocolate", "strawberry", "cookies and cream",
+                    "rocky road", "double dutch", "coffee", "ube", "cheese", "mango"]
+                if user_ice_cream in common_flavors:
+                    break
+                else: 
+                    print("Ice cream flavor is uncommon or invalid.")
+
                     
-                person_info["Favorite Food"] = input("Favorite food: ")
-                person_info["Favorite Ice Cream Flavor"] = input("Favorite Ice cream flavor: ")
                 person_info["Choice"] = input("Books or songs?: ")
                 #if person_info["Choice"] != "books":
                     #break
