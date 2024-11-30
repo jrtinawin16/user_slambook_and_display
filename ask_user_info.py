@@ -122,15 +122,24 @@ while True:
                 else: 
                     print("Ice cream flavor is uncommon or invalid.")
 
+            while True: # Loop 14 - asks user if they prefer books or songs        
+                user_choice = input("Books or songs?: ")
+                if user_choice == "books":
+                    break
+                elif user_choice == "songs":
+                    break
+                else:
+                    print("Pick only one from the choices.")
+
+            while True: # Loop 15 - asks user if they like pineapples on pizza   
+                user_preference = input("Do you like pineapples on pizza? (y/n): ")
+                if user_preference == "y": 
+                    break
+                elif user_preference == "n":
+                    break
+                else: 
+                    print("Invalid answer.")
                     
-                person_info["Choice"] = input("Books or songs?: ")
-                #if person_info["Choice"] != "books":
-                    #break
-                #elif person_info["Choice"] != "songs":
-                    #break
-                person_info["Pineapple Preference"] = input("Do you like pineapples on pizza? (y/n): ")
-                #if person_info["Pineapple Preference"] != "y" or person_info["Pineapple Preference"] != "n":
-                    #break
                 person_info["Description"] = input("One word to describe yourself: ")
                 person_info["Motto"] = input("Motto in life: ")
 
