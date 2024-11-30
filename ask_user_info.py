@@ -154,6 +154,24 @@ while True:
                 else:
                     print("Motto is too short.")
 
+            user_datas = {
+                'full_name': full_name,
+                'nickname' : nickname,
+                'user_age' : user_age,
+                'user_address' : user_address,
+                'user_birthday' : user_birthday,
+                'user_number' : user_number,
+                'user_color' : user_color,
+                'user_hobby' : user_hobby,
+                'user_ambition' : user_ambition,
+                'user_favorite_food' : user_favorite_food,
+                'user_ice_cream' : user_ice_cream,
+                'user_choice' : user_choice,
+                'user_preference' : user_preference,
+                'user_description' : user_description,
+                'user_motto' : user_motto 
+            }        
+
                 print("\nInformation successfully saved!")
                 #continue_input = input("Do you want to add another person? (y/n): ")
                 #break
