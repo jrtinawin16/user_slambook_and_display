@@ -156,55 +156,64 @@ while True:
 
             user_info[full_name] = {
                 'full_name': full_name,
-                'nickname' : nickname,
-                'user_age' : user_age,
-                'user_address' : user_address,
-                'user_birthday' : user_birthday,
-                'user_number' : user_number,
-                'user_color' : user_color,
-                'user_hobby' : user_hobby,
-                'user_ambition' : user_ambition,
-                'user_favorite_food' : user_favorite_food,
-                'user_ice_cream' : user_ice_cream,
-                'user_choice' : user_choice,
-                'user_preference' : user_preference,
-                'user_description' : user_description,
-                'user_motto' : user_motto 
+                'nickname': nickname,
+                'user_age': user_age,
+                'user_address': user_address,
+                'user_birthday': user_birthday,
+                'user_number': user_number,
+                'user_color': user_color,
+                'user_hobby': user_hobby,
+                'user_ambition': user_ambition,
+                'user_favorite_food': user_favorite_food,
+                'user_ice_cream': user_ice_cream,
+                'user_choice': user_choice,
+                'user_preference': user_preference,
+                'user_description': user_description,
+                'user_motto': user_motto 
             }        
 
             print("-------------------------------------")
             print(f"Your information")
-            print(f"Full Name: {user_info[full_name]["full_name"]}")
-            print(f"Nickname: {user_info[full_name]["nickname"]}")
-            print(f"Age: {user_info[full_name]["user_age"]}")
+            print(f"Full Name: {user_info[full_name]['full_name']}")
+            print(f"Nickname: {user_info[full_name]['nickname']}")
+            print(f"Age: {user_info[full_name]['user_age']}")
             print(f"Address: {user_info[full_name]['user_address']}")
-            print(f"Birthday: {user_info[full_name]["user_birthday"]}")
+            print(f"Birthday: {user_info[full_name]['user_birthday']}")
             print(f"Cellphone Number: {user_info[full_name]['user_number']}")
-            print(f"Favorite color: {user_info[full_name]["user_color"]}")
+            print(f"Favorite color: {user_info[full_name]['user_color']}")
             print(f"Hobby: {user_info[full_name]['user_hobby']}")
             print(f"Ambition: {user_info[full_name]['user_ambition']}")
-            print(f"Favorite food: {user_info[full_name]["user_favorite_food"]}")
-            print(f"Favorite ice cream flavor: {user_info[full_name]["user_ice_cream"]}")
-            print(f"Books or songs: {user_info[full_name]["user_choice"]}")
-            print(f"Like pineapples on pizza: {user_info[full_name]["user_preference"]}")
-            print(f"One word to describe yourself: {user_info[full_name]["user_description"]}")
+            print(f"Favorite food: {user_info[full_name]['user_favorite_food']}")
+            print(f"Favorite ice cream flavor: {user_info[full_name]['user_ice_cream']}")
+            print(f"Books or songs: {user_info[full_name]['user_choice']}")
+            print(f"Like pineapples on pizza: {user_info[full_name]['user_preference']}")
+            print(f"One word to describe yourself: {user_info[full_name]['user_description']}")
             print(f"Motto: {user_info[full_name]['user_motto']}")
             print("Information successfully saved!")
             print("-------------------------------------")
 
-                #continue_input = input("Do you want to add another person? (y/n): ")
-                #break
-            
+            continue_input = input("Do you want to add another person? (y/n): ")
+            break
         except: 
             print("Invalid input, please try again.")
+            
+    if continue_input == "y":
+        continue
+    elif continue_input == "n":
+        print("Thank you!")
+        break
+    else:
+        print("Invalid, please try again.")
+            
+        
     
         #if continue_input == "y":    
             #continue
         #elif continue_input == "n":
-            print("Thank you!")
-            break
+            #print("Thank you!")
+            #break
         #else:
-            print("Invalid input, please try again.")
+            #print("Invalid input, please try again.")
     
 
     
