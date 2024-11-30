@@ -139,9 +139,20 @@ while True:
                     break
                 else: 
                     print("Invalid answer.")
-                    
-                person_info["Description"] = input("One word to describe yourself: ")
-                person_info["Motto"] = input("Motto in life: ")
+
+            while True: # Loop 16 - asks user for a word    
+                user_description = input("One word to describe yourself: ")
+                if len(user_description.split()) == 1:
+                    break
+                else: 
+                    print("Cannot be blank.")
+
+            while True: # Loop 17 - asks user for their motto
+                user_motto = input("Motto in life: ")
+                if len(user_motto.split()) >= 3:
+                    break
+                else:
+                    print("Motto is too short.")
 
                 print("\nInformation successfully saved!")
                 #continue_input = input("Do you want to add another person? (y/n): ")
