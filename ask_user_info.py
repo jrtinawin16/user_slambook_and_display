@@ -154,7 +154,7 @@ while True:
                 else:
                     print("Motto is too short.")
 
-            user_datas = {
+            user_info[full_name] = {
                 'full_name': full_name,
                 'nickname' : nickname,
                 'user_age' : user_age,
@@ -172,7 +172,26 @@ while True:
                 'user_motto' : user_motto 
             }        
 
-                print("\nInformation successfully saved!")
+            print("-------------------------------------")
+            print(f"Your information")
+            print(f"Full Name: {user_info[full_name]["full_name"]}")
+            print(f"Nickname: {user_info[full_name]["nickname"]}")
+            print(f"Age: {user_info[full_name]["user_age"]}")
+            print(f"Address: {user_info[full_name]['user_address']}")
+            print(f"Birthday: {user_info[full_name]["user_birthday"]}")
+            print(f"Cellphone Number: {user_info[full_name]['user_number']}")
+            print(f"Favorite color: {user_info[full_name]["user_color"]}")
+            print(f"Hobby: {user_info[full_name]['user_hobby']}")
+            print(f"Ambition: {user_info[full_name]['user_ambition']}")
+            print(f"Favorite food: {user_info[full_name]["user_favorite_food"]}")
+            print(f"Favorite ice cream flavor: {user_info[full_name]["user_ice_cream"]}")
+            print(f"Books or songs: {user_info[full_name]["user_choice"]}")
+            print(f"Like pineapples on pizza: {user_info[full_name]["user_preference"]}")
+            print(f"One word to describe yourself: {user_info[full_name]["user_description"]}")
+            print(f"Motto: {user_info[full_name]['user_motto']}")
+            print("Information successfully saved!")
+            print("-------------------------------------")
+
                 #continue_input = input("Do you want to add another person? (y/n): ")
                 #break
             
