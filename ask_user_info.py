@@ -91,9 +91,21 @@ while True:
                     break
                 else:
                     print("Color is uncommon or invalid.")
+
+            while True: # Loop 10 - asks user for hobby
+                user_hobby = input("Hobby: ")
+                if len(user_hobby.split()) >= 1: 
+                    break
+                else:
+                    print("Invalid, please enter a hobby.")
+            
+            while True: # Loop 11 - asks user for ambition
+                user_ambition = input("What would you like to be in the future?: ")
+                if len(user_ambition.split()) >= 1:
+                    break
+                else:
+                    print("Please enter an ambition.")
                     
-                person_info["Hobby"] = input("Hobby: ")
-                person_info["Ambition"] = input("What would you like to be in the future?: ")
                 person_info["Favorite Food"] = input("Favorite food: ")
                 person_info["Favorite Ice Cream Flavor"] = input("Favorite Ice cream flavor: ")
                 person_info["Choice"] = input("Books or songs?: ")
