@@ -76,11 +76,14 @@ while True:
                 user_birthday = f"{month}/{date}/{year}"
                 print (f"Birthday: {user_birthday}")
                 break
-                
-                
-                #person_info["Cellphone Number"] = (int(input("Cellphone Number: ")))
-                #if (len(str(person_info["Cellphone Number"]))) != 11:
-                    #break
+
+            while True: # Loop 8 - asks user for cellphone number
+                user_number = (int(input("Cellphone Number (0 + ..): ")))
+                if (len(str(user_number))) == 10:
+                    break
+                else: 
+                    print("Cellphone number must be 11 digits.")
+
                 person_info["Favorite Color"] = input("Favorite Color: ")
                 person_info["Hobby"] = input("Hobby: ")
                 person_info["Ambition"] = input("What would you like to be in the future?: ")
