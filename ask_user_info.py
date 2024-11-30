@@ -52,9 +52,32 @@ while True:
                     break
                 else:
                     print("Address is too short.")
-                    
 
-                #person_info["Birthday"] = input("Birthday: ")
+            while True: # Loop 7 - asks user for birthday
+                print("Birthday (MM/DD/YYYY): ")
+                while True: # Loop 7a - asks user for month in number format
+                    month = int(input("Month: "))
+                    if month > 0 and month <= 12:
+                        break
+                    else:
+                        print("Invalid month, try again.")
+                while True: # Loop 7b - asks user for date
+                    date = int(input("Birthdate: "))
+                    if date >= 1 and date <= 31:
+                        break
+                    else:
+                        print("Invalid date, try again.")
+                while True: # Loop 7c - asks user for year
+                    year = int(input("Year: "))
+                    if year >= 1924 and year <= 2024:
+                        break
+                    else:
+                        print("Invalid year, try again.")
+                user_birthday = f"{month}/{date}/{year}"
+                print (f"Birthday: {user_birthday}")
+                break
+                
+                
                 #person_info["Cellphone Number"] = (int(input("Cellphone Number: ")))
                 #if (len(str(person_info["Cellphone Number"]))) != 11:
                     #break
