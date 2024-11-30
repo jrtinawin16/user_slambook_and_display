@@ -83,8 +83,15 @@ while True:
                     break
                 else: 
                     print("Cellphone number must be 11 digits.")
-
-                person_info["Favorite Color"] = input("Favorite Color: ")
+            
+            while True: # Loop 9 - asks user for favorite color
+                user_color = input("Favorite Color: ")
+                common_colors = ["red", "blue", "green", "yellow", "orange", "purple", "pink", "brown", "black", "white", "gray"]
+                if user_color in common_colors:
+                    break
+                else:
+                    print("Color is uncommon or invalid.")
+                    
                 person_info["Hobby"] = input("Hobby: ")
                 person_info["Ambition"] = input("What would you like to be in the future?: ")
                 person_info["Favorite Food"] = input("Favorite food: ")
