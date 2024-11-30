@@ -200,6 +200,27 @@ while True:
     if continue_input == "y":
         continue
     elif continue_input == "n":
+        with open("personal_data.txt", "a") as file:
+            file.write("Collected informations: \n")
+            file.write("-------------------------------------\n")
+            for name, info in user_info.items():
+                file.write(f"Full Name: {info['full_name']}\n")
+                file.write(f"Nickname: {info['nickname']}\n")
+                file.write(f"Age: {info['user_age']}\n")
+                file.write(f"Address: {info['user_address']}\n")
+                file.write(f"Birthday: {info['user_birthday']}\n") 
+                file.write(f"Cellphone Number: {info['user_number']}\n")
+                file.write(f"Favorite color: {info['user_color']}\n")
+                file.write(f"Hobby: {info['user_hobby']}\n")
+                file.write(f"Ambition: {info['user_ambition']}\n")
+                file.write(f"Favorite food: {info['user_favorite_food']}\n")
+                file.write(f"Favorite ice cream flavor: {info['user_ice_cream']}\n")
+                file.write(f"Books or songs: {info['user_choice']}\n")
+                file.write(f"Like pineapples on pizza: {info['user_preference']}\n")
+                file.write(f"One word to describe yourself: {info['user_description']}\n")
+                file.write(f"Motto: {info['user_motto']}\n")
+                file.write("-------------------------------------\n")
+                break
         print("Thank you!")
         break
     else:
@@ -207,13 +228,7 @@ while True:
             
         
     
-        #if continue_input == "y":    
-            #continue
-        #elif continue_input == "n":
-            #print("Thank you!")
-            #break
-        #else:
-            #print("Invalid input, please try again.")
+  
     
 
     
