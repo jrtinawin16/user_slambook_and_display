@@ -1,0 +1,18 @@
+Collected informations: 
+-------------------------------------
+Full Name: Max Andrew Nat
+Nickname: Drew
+Age: 26
+Address: 6 Hayward Street New York
+Birthday: 1/27/1999
+Cellphone Number: 9471672926
+Favorite color: red
+Hobby: read
+Ambition: chef
+Favorite food: pasta
+Favorite ice cream flavor: vanilla
+Books or songs: songs
+Like pineapples on pizza: n
+One word to describe yourself: happy
+Motto: time is gold
+-------------------------------------
