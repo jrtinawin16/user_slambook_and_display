@@ -17,26 +17,29 @@
 # ask user again if they want to enter another set of data
 
 user_info = {}
-# Loop 1- asks user for next input
+# Loop 1 - asks user for next input
 while True:
     print("\n---Hello! Please enter your information---")
     # Loop 2 - retry if there is error
     while True:
         try:
-    # Loop 3-collect all datas
-            while True:    
+            while True: # Loop 3 - asks user for full name
                 full_name = input("Full name: ")
-                if full_name == " ":
-                    continue
-            
-        # store datas in dictionary
-                
-
-                person_info["Nickname"] = input("Nickname: ")
-                if person_info["Nickname"] == " ":
+                if len(full_name.split()) >= 3:
                     break
-                person_info["Age"] = (int(input("Age: ")))
-                if person_info["Age"] == " ":
+                else:
+                    print("Full name must be at least 3 words.")
+
+            while True: # Loop 4 - asks user for nickname
+                nickname = input("Nickname: ")
+                if len(nickname.split()) >= 1:
+                    break
+                else:
+                    print("Please enter a nickname.")
+
+                    
+                #person_info["Age"] = (int(input("Age: ")))
+                #if person_info["Age"] == " ":
                     break
                 person_info["Address"] = input("Address: ")
                 person_info["Birthday"] = input("Birthday: ")
@@ -60,18 +63,18 @@ while True:
                 person_info["Motto"] = input("Motto in life: ")
 
                 print("\nInformation successfully saved!")
-                continue_input = input("Do you want to add another person? (y/n): ")
+                #continue_input = input("Do you want to add another person? (y/n): ")
                 break
             
         except: 
             print("Invalid input, please try again.")
     
-        if continue_input == "y":    
+        #if continue_input == "y":    
             continue
-        elif continue_input == "n":
+        #elif continue_input == "n":
             print("Thank you!")
             break
-        else:
+        #else:
             print("Invalid input, please try again.")
     
 
