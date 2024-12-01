@@ -21,4 +21,39 @@ Collected informations:
 Full Name: Harriet P Cook:Nickname: Harry:Age: 37:Address: 48 Snowbird Lane St Quezon City:Birthday: 2/28/2004:Cellphone Number: 9264737136:Favorite color: green\: Hobby: cooking:Ambition: Engineer:Favorite food: Sinigang:Favorite ice cream flavor: rocky road:Books or songs: songs:Like pineapples on pizza: y:One word to describe yourself: Cheerful:Motto: One with nature:-------------------------------------
 Collected informations: 
 -------------------------------------
-Full Name: Alex C Cooper : Nickname: Lex : Age: 18 : Address: 7 Bentley Street New York : Birthday: 7/9/2000 : Cellphone Number: 9281492194 : Favorite color: black : Hobby: cooking : Ambition: Teacher : Favorite food: Chicken : Favorite ice cream flavor: strawberry : Books or songs: books : Like pineapples on pizza: y : One word to describe yourself: Happy : Motto: Conquered by none
+Full Name: Alex C Cooper : Nickname: Lex : Age: 18 : Address: 7 Bentley Street New York : Birthday: 7/9/2000 : Cellphone Number: 9281492194 : Favorite color: black : Hobby: cooking : Ambition: Teacher : Favorite food: Chicken : Favorite ice cream flavor: strawberry : Books or songs: books : Like pineapples on pizza: y : One word to describe yourself: Happy : Motto: Conquered by noneCollected informations: 
+-------------------------------------
+Full Name: John C Doe
+Nickname: John
+Age: 19
+Address: 123 Kernel St New York USA
+Birthday: 10/27/2000
+Cellphone Number: 9872531740
+Favorite color: red
+Hobby: playing
+Ambition: Developer
+Favorite food: Fries
+Favorite ice cream flavor: vanilla
+Books or songs: books
+Like pineapples on pizza: n
+One word to describe yourself: Explorer
+Motto: When life goes lemons, make lemonade
+-------------------------------------
+Collected informations: 
+-------------------------------------
+Full Name: John Clarence Doe
+Nickname: Renz
+Age: 19
+Address: 7 Lenard Street New York City
+Birthday: 9/18/2000
+Cellphone Number: 9251790234
+Favorite color: blue
+Hobby: playing sports
+Ambition: Lawyer
+Favorite food: Pizza
+Favorite ice cream flavor: chocolate
+Books or songs: songs
+Like pineapples on pizza: y
+One word to describe yourself:  Chill
+Motto: Conquered by none
+-------------------------------------
